@@ -1,0 +1,342 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #dad7cd;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 80px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Seções */
+.section {
+  padding: 40px 0;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Grid de cartões */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 colunas fixas */
+  gap: 20px;
+  /* espaço entre os itens */
+  justify-content: center;
+  /* centraliza a grade se ela for menor que o contêiner */
+}
+
+.card {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 200px;
+}
+
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 70px;
+  color: #344e41;
+}
+
+h3 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.cinema-filme {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cartaz-filme {
+  width: 250px;
+  border-radius: 8px;
+}
+
+.info-filme {
+  flex: 1;
+  min-width: 250px;
+}
+
+.info-filme h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.info-filme p,
+.info-filme ul {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.info-filme ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.eventosimg {
+  text-align: center;
+}
+
+.cinema-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.cinema-filme {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.cinema-filme:hover {
+  transform: scale(1.03);
+}
+
+.cartaz-filme {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.info-filme {
+  text-align: left;
+  width: 100%;
+}
+
+.info-filme h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.info-filme p,
+.info-filme ul {
+  font-size: 0.95rem;
+  margin: 4px 0;
+}
+
+.info-filme ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#novidades ul {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+#novidades ul li::before {
+  content: "• ";
+  color: #2d7c4f;
+  font-weight: bold;
+}
+
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.h3esp {
+  color: #344e41;
+  text-align: center;
+}
+
+h1 {
+  color: #344e41;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  gap: 150px;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+
+.servicos {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.titulo-servicos {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #17461a;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.cards-servicos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card-servico {
+  position: relative;
+  padding-top: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 250px;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.card-servico:hover {
+  transform: translateY(-5px);
+}
+
+.card-servico img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.card-servico h3 {
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.card-servico .descricao {
+  display: none;
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+/* Estilo quando ativa */
+.card-servico.ativo .descricao {
+  display: block;
+}
+
+
+
+.card-servico .descricao {
+  display: none;
+  margin-top: 10px;
+  color: #555;
+  transition: all 0.3s ease;
+}
+
+.card-servico.ativo .descricao {
+  display: block;
+}
+
+.serviçosimg {
+  border-radius: 10px;
+
+}
+
+.imagens-superiores {
+  display: grid;
+  grid-template-columns: repeat(3, 390px);
+  /* 3 colunas */
+  gap: 80px;
+  /* espaço entre as imagens */
+  width: max-content;
+  /* largura máxima do grid */
+  margin: 40px auto;
+  /* centraliza o grid na tela */
+  padding: 20px;
+}
+
+
+.imagens-superiores img {
+  width: 450px;
+  height: 320px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.imagens-superiores img:hover {
+  transform: scale(1.05);
+}
