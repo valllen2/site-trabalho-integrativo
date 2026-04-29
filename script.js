@@ -1,4 +1,4 @@
-// Mostrar/ocultar conteúdo
+
 function mostrarMais(id) {
   const elemento = document.getElementById(id);
   if (elemento.style.display === "block") {
@@ -8,7 +8,7 @@ function mostrarMais(id) {
   }
 }
 
-// Scroll suave ao clicar nos links
+
 document.querySelectorAll('a[href^="#"]').forEach(ancora => {
   ancora.addEventListener("click", function (e) {
     e.preventDefault();
@@ -19,7 +19,7 @@ document.querySelectorAll('a[href^="#"]').forEach(ancora => {
   });
 });
 
-// Animação ao rolar (fade in)
+
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -33,7 +33,7 @@ document.querySelectorAll("section").forEach(secao => {
   observer.observe(secao);
 });
 
-// Interação no botão
+
 const botao = document.querySelector("button");
 if (botao) {
   botao.addEventListener("click", () => {
